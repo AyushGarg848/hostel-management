@@ -97,7 +97,7 @@
 								<p>NIE Mens Hostel</p>
 							</div>
 							<div class="mask">
-								<a href="application_form.php?id=NIEBH A-Block"><img src="web_home/images/niebh_a.jpg" class="img-responsive" alt="" /></a>
+								<a href="application_form.php?id=NIEBH_A"><img src="web_home/images/niebh_a.jpg" class="img-responsive" alt="" /></a>
 							</div>
 						</div>
 					</div>
@@ -109,7 +109,7 @@
 								<p>NIE Mens Hostel</p>
 							</div>
 							<div class="mask">
-								<a href="application_form.php?id=NIEBH B-Block"><img src="web_home/images/niebh_b.jpg" class="img-responsive" alt="" /></a>
+								<a href="application_form.php?id=NIEBH_B"><img src="web_home/images/niebh_b.jpg" class="img-responsive" alt="" /></a>
 							</div>
 						</div>
 					</div>

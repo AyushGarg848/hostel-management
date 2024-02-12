@@ -190,7 +190,7 @@ if(isset($_POST['submit'])){
          echo "<script type='text/javascript'>alert('Message sent Successfully!')</script>";
     }
     else{
-         echo "<script type='text/javascript'>alert('Error in sending message!!! Please try again.')</script>";
+         echo "<script type='text/javascript'>alert('Error!! Please try again.')</script>";
    }
   }
 

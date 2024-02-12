@@ -91,46 +91,31 @@
 </header>
 <!--Header-->
 
-			<!-- <ul class="cd-radial-slider" data-radius1="60" data-radius2="1364" data-centerx1="110" data-centerx2="1290">
+			<ul class="cd-radial-slider" data-radius1="60" data-radius2="1364" data-centerx1="110" data-centerx2="1290">
 				<li class="visible">
 					<div class="svg-wrapper">
 						<svg viewBox="0 0 1400 800">
 							<title>Animated SVG</title>
 							<defs>
 							</defs>
-							<image height='800px' width="1400px" clip-path="url(#cd-image-1)" xlink:href="web_home/images/nie.png"></image>
+							<image height='800px' width="1400px" clip-path="url(#cd-image-1)" xlink:href="web_home/images/nie.jpeg"></image>
 							
 						</svg>
-					</div> .svg-wrapper -->
-					<div class="bcg">
-					<div class="wrapper">
-							<div class="text-center" style="padding-top: 200px !important;">
-								<h2  style="color: #000000; padding-left:5px;"><b>Hostel Allocation</b></h2>
-								<h3 style="color: #000000; padding-left:5px">System</h3>
-
+					</div> <!-- .svg-wrapper -->
+					<div class="cd-radial-slider-content">
+						<div class="wrapper">
+							<div class="text-center" style="padding-top:150px !important;">
+								<h4  style="color: #000000; padding-left:5px; font-size : 40px"><b>Hostel Allocation</b></h2>
+								<h4 style="color: #000000; padding-left:5px font-size : 40px" ><b>System</b></h3>
 							</div>
 						</div>
-					</div>
-					<div class="cd-radial-slider-content">
-						
 					</div> <!-- .cd-radial-slider-content -->
 				</li>
-
-
 			</ul> <!-- .cd-radial-slider -->
-			<
+
 		</div> <!-- .cd-radial-slider-wrapper -->
 	</div>
 <!-- //banner -->
-
-<!-- about -->
-
-<!-- why choose us -->
-<!-- team -->
-
-
-<!-- Clients -->
-
 
 <!-- js-scripts -->
 

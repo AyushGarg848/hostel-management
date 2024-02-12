@@ -196,7 +196,7 @@
      	$pwdCheck = password_verify($password, $row['Pwd']);
 
         if($pwdCheck == false){
-            echo "<script type='text/javascript'>alert('Incorrect Password!!')</script>";
+            echo "<script type='text/javascript'>alert('Incorrect Password!')</script>";
       }
       else if($pwdCheck == true) {
 
@@ -208,7 +208,7 @@
             $result3 = mysqli_query($conn,$query3);
 
             if($result3){
-            	 echo "<script type='text/javascript'>alert('Application sent successfully')</script>";
+            	 echo "<script type='text/javascript'>alert('Application sent successfully!')</script>";
             }
       }
      }

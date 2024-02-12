@@ -25,7 +25,7 @@
 
 
 <body style="background-color: #730f17;">
-    <img width="200px" height="120px" src="https://almashines.s3.dualstack.ap-southeast-1.amazonaws.com/assets/images/institutes/logo/170x170/635.jpg?v=1602772429" alt="" style="width: 275px !important; height: 100px !important; padding-left: 450px !important;" >
+    <img width="200px" height="120px" src="https://almashines.s3.dualstack.ap-southeast-1.amazonaws.com/assets/images/institutes/logo/170x170/635.jpg?v=1602772429" alt="" style="width: 275px !important; height: 100px !important; padding-left: 590px !important;" >
     <h1 style="padding-top: 15px !important;">Hostel Room Allocation</h1>
     <div class=" w3l-login-form">
         <h2>Student Login</h2>
