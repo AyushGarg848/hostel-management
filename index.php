@@ -52,7 +52,7 @@
             <button type="submit" name="login-submit">Login</button>
         </form>
 
-        <p class=" w3l-register-p">Creat a new Account <a href="signup.php" class="register"> Sign up</a></p>
+        <p class=" w3l-register-p">Create a new Account <a href="signup.php" class="register"> Sign up</a></p>
     </div>
     <footer style="padding-bottom: 0px !important;">
         <p class="copyright-agileinfo"> &copy; 2024 DBMS Project.</p>
