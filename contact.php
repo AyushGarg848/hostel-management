@@ -84,17 +84,33 @@
 <section class="contact py-5">
 	<div class="container">
 		<h2 class="heading text-capitalize mb-sm-5 mb-4"> Contact Us </h2>
-		<div style="color:black">
-		<h4>(M) 0821-2480475 (10:30 am to 5:30 pm) [Except Sunday]</h5>
-		<br>
-		<h4>NIE-BH: <a href="mailto:wardenniebh@nie.ac.in">wardenniebh@nie.ac.in</a></h5>
-		<br>
-		<h4>Yuvika & Yeshvika: <a href="mailto:wardenniegh@nie.ac.in">wardenniegh@nie.ac.in</a></h5>
-		<br>
-		<h4>Caretaker Boy's Hostel - 9886681489</h5>
-		<br>
-		<h4>Caretaker Girl's hostel - 9606241902</h5>
-		</div>
+			<div class="mail_grid_w3l">
+				<form action="contact.php" method="post">
+					<div class="row">
+						<div class="col-md-6 contact_left_grid" data-aos="fade-right">
+							<div class="contact-fields-w3ls">
+								<input type="text" name="hostel_name" placeholder="Hostel Name" required="">
+							</div>
+							<div class="contact-fields-w3ls">
+								<input type="text" name="name" placeholder="Name" value="<?php echo $_SESSION['fname']." ".$_SESSION['lname']; ?>" required="">
+							</div>
+							<div class="contact-fields-w3ls">
+								<input type="text" name="rol_no" placeholder="Roll Number" value="<?php echo $_SESSION['roll']; ?>" required="">
+							</div>
+							<div class="contact-fields-w3ls">
+								<input type="text" name="subject" placeholder="Subject" required="">
+							</div>
+						</div>
+						<div class="col-md-6 contact_left_grid" data-aos="fade-left">
+							<div class="contact-fields-w3ls">
+								<textarea name="message" placeholder="Message..." required=""></textarea>
+							</div>
+							<input type="submit" name="submit" value="Submit">
+						</div>
+					</div>
+
+				</form>
+			</div>
 </section>
 <!-- //contact -->
 
@@ -140,3 +156,31 @@
 
 </body>
 </html>
+
+<?php
+if(isset($_POST['submit'])){
+	/*echo "<script type='text/javascript'>alert('hello')</script>";*/
+	$subject = $_POST['subject'];
+	$message = $_POST['message'];
+	$hostel_name = $_POST['hostel_name'];
+
+    $query7 = "SELECT * FROM Hostel WHERE Hostel_name = '$hostel_name'";
+    $result7 = mysqli_query($conn,$query7);
+    $row7 = mysqli_fetch_assoc($result7);
+    $hostel_id = $row7['Hostel_id'];
+
+	$roll = $_SESSION['roll'];
+
+    $today_date =  date("Y-m-d");
+    $time = date("h:i A");
+
+	$query = "INSERT INTO Message (sender_id,hostel_id,subject_h,message,msg_date,msg_time) VALUES ('$roll','$hostel_id','$subject','$message','$today_date','$time')";
+    $result = mysqli_query($conn,$query);
+    if($result){
+         echo "<script type='text/javascript'>alert('Message sent Successfully!')</script>";
+    }
+    else{
+         echo "<script type='text/javascript'>alert('Unexpected Error!! Please try again.')</script>";
+   }
+  }
+?>

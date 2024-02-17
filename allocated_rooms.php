@@ -58,7 +58,9 @@
 						<li class="nav-item">
 							<a class="nav-link" href="admin.php">Home <span class="sr-only">(current)</span></a>
 						</li>
-						
+						<li class="nav-item">
+							<a class="nav-link" href="message_hostel_manager.php">Messages Received</a>
+						</li>
 						<li class="nav-item">
 						<a class="nav-link" href="allocate_room.php">Allocate Room</a>
 					</li>

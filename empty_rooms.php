@@ -59,6 +59,9 @@
 							<a class="nav-link" href="admin.php">Home <span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item">
+							<a class="nav-link" href="message_hostel_manager.php">Messages Received</a>
+						</li>
+						<li class="nav-item">
 						<a class="nav-link" href="allocate_room.php">Allocate Rooms</a>
 						</li>
 					<li class="dropdown nav-item" style="width:200px">

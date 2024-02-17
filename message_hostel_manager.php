@@ -1,15 +1,17 @@
 <?php
- require 'includes/config.inc.php';
+  require 'includes/config.inc.php';
+  
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Home: Hostel Manager</title>
-
+<title>Messages</title>
+	
 	<!-- Meta tag Keywords -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
-	<meta name="keywords" content="Intrend Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+	<meta name="keywords" content="Intrend Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 	<script type="application/x-javascript">
 		addEventListener("load", function () {
@@ -20,51 +22,59 @@
 			window.scrollTo(0, 1);
 		}
 	</script>
+	<!--bootsrap -->
+
 	<!--// Meta tag Keywords -->
-
-	<link href="web_home/css_home/slider.css" type="text/css" rel="stylesheet" media="all">
-
+		
 	<!-- css files -->
 	<link rel="stylesheet" href="web_home/css_home/bootstrap.css"> <!-- Bootstrap-Core-CSS -->
-	<link rel="stylesheet" href="web_home/css_home/style.css" type="text/css" media="all" /> <!-- Style-CSS -->
+	<link rel="stylesheet" href="web_home/css_home/style.css" type="text/css" media="all" /> <!-- Style-CSS --> 
 	<link rel="stylesheet" href="web_home/css_home/fontawesome-all.css"> <!-- Font-Awesome-Icons-CSS -->
 	<!-- //css files -->
-
-	<!-- testimonials css -->
-	<link rel="stylesheet" href="web_home/css_home/flexslider.css" type="text/css" media="screen" property="" /><!-- flexslider css -->
-	<!-- //testimonials css -->
-
+	
 	<!-- web-fonts -->
 	<link href="//fonts.googleapis.com/css?family=Poiret+One&amp;subset=cyrillic,latin-ext" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
 	<!-- //web-fonts -->
-
+	
 </head>
+<style type="text/css">
+	.card-header{
+		padding: 15px;
+		font-size: 30px;
+	}
+	.card-body{
+		padding: 15px;
+	}
+	.card-footer{
+		text-align: left;
+		padding: 15px;
+	}
+</style>
+
 
 <body>
 
 <!-- banner -->
-	<div class="banner" id="home">
-		<div class="cd-radial-slider-wrapper">
+<div class="inner-page-banner" id="home"> 	   
+	<!--Header-->
+	<header>
+		<div class="container agile-banner_nav">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				
+				<h1><a class="navbar-brand" href="admin.php">NIE <span class="display"></span></a></h1>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
 
-<!--Header-->
-<header>
-	<div class="container agile-banner_nav">
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-			<h1><a class="navbar-brand" href="admin.php">NIE <span class="display"></span></a></h1>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="admin.php">Home <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="message_hostel_manager.php">Messages Received</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="allocate_room.php">Allocate Rooms</a>
+				<div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="admin.php">Home <span class="sr-only">(current)</span></a>
+						</li>
+						
+						<li class="nav-item">
+						<a class="nav-link" href="allocate_room.php">Allocate Room</a>
 					</li>
 					<li class="dropdown nav-item" style="width:200px">
 						<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Rooms
@@ -79,40 +89,35 @@
 							</li>
 						</ul>
 					</li>
-					
-				</ul>
-			</div>
 
-		</nav>
-	</div>
-</header>
-<!--Header-->
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--Header-->
+</div>
+<!-- //banner --> 
 
-			<ul class="cd-radial-slider" data-radius1="60" data-radius2="1364" data-centerx1="110" data-centerx2="1290">
-				<li class="visible">
-					<div class="svg-wrapper">
-						<svg viewBox="0 0 1400 800">
-							<title>Animated SVG</title>
-							<defs>
-							</defs>
-							<image height='800px' width="1400px" clip-path="url(#cd-image-1)" xlink:href="web_home/images/nie.jpeg"></image>
-							
-						</svg>
-					</div> <!-- .svg-wrapper -->
-					<div class="cd-radial-slider-content">
-						<div class="wrapper">
-							<div class="text-center" style="padding-top:150px !important;">
-								<h4  style="color: #000000; padding-left:5px; font-size : 40px"><b>Hostel Allocation</b></h2>
-								<h4 style="color: #000000; padding-left:5px font-size : 40px" ><b>System</b></h3>
-							</div>
-						</div>
-					</div> <!-- .cd-radial-slider-content -->
-				</li>
-			</ul> <!-- .cd-radial-slider -->
+<?php
+    $query = "SELECT * FROM Message";
+    $result = mysqli_query($conn,$query);
 
-		</div> <!-- .cd-radial-slider-wrapper -->
-	</div>
-<!-- //banner -->
+    while ($row = mysqli_fetch_assoc($result)){  
+          ?> 
+
+    <div class="container" style="color:black">
+      <div class="card">
+      <div class="card-header"><b><?php echo $row['subject_h']; ?></b></div>
+      <div class="card-body"><?php echo $row['message']; ?></div> 
+      <div class="card-footer"><?php echo $row['sender_id'] ?><span style="float: right"><?php echo $row['msg_date']." - ".$row['msg_time']; ?></span></div>
+  </div>
+</div>
+             
+    <?php
+    } 
+
+?>
 
 <!-- js-scripts -->
 
